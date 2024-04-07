@@ -32,12 +32,10 @@ public class PlayerMove : MonoBehaviour
                     transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed *-1, Space.World);
             }
         }
-        if(Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-                    transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed*2, Space.World);
+            transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed * 2, Space.World);
 
-        }else{
-             transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
         }
         if(Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.LeftArrow))
         {
