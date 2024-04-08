@@ -46,7 +46,7 @@ void Update()
         }
 
         Instantiate(sectionArray[secNum], new Vector3(0,0,zpos), Quaternion.identity);
-        zpos += 40;
+        zpos += 200;
         yield return new WaitForSeconds(4);
         creatingSection=false;
     }
