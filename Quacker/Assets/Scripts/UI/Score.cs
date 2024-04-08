@@ -23,6 +23,7 @@ public class Score : MonoBehaviour
 
         pointsRate += Mathf.Max(3, 0);
         IncreaseScore(pointsRate * Time.fixedDeltaTime);
+        saveScore();
     }
 
     public void IncreaseScore(float score)
