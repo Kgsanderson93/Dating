@@ -26,4 +26,9 @@ public class Game_Over : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void Highscores()
+    {
+        SceneManager.LoadScene(3);
+    }
 }

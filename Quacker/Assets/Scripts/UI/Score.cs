@@ -37,6 +37,23 @@ public class Score : MonoBehaviour
     private void UpdateScoreText()
     {
         scoreText.text = ((int)currentScore).ToString();
+        //saveScore();
+    }
+
+    private void saveScore()
+    {
+       
+        if (currentScore > PlayerPrefs.GetFloat("Highscore 1", 0))
+        {
+            PlayerPrefs.SetFloat("Highscore 1", currentScore);
+        } else if (currentScore > PlayerPrefs.GetFloat("Highscore 2", 0))
+        {
+            PlayerPrefs.SetFloat("Highscore 2", currentScore);
+        } else if (currentScore > PlayerPrefs.GetFloat("Highscore 3", 0))
+        {
+            PlayerPrefs.SetFloat("Highscore 3", currentScore);
+        }
+        
     }
 
 }
